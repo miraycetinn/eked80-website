@@ -17,11 +17,11 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-slate-900/50" />
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="max-w-4xl mx-auto px-4 md:px-6 text-center text-white">
-          <p className="uppercase tracking-[0.25em] text-xs md:text-sm mb-3">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 text-center text-white pt-16 pb-10 md:pt-0 md:pb-8 lg:pb-10">
+          <p className="uppercase tracking-[0.25em] text-[11px] md:text-xs mb-3 md:mb-4">
             Eğitime ve Kültüre Erişim Derneği
           </p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 leading-tight md:leading-snug">
             Eğitime ve kültüre erişimin herkes için mümkün olduğu bir dünya.
           </h1>
           <p className="text-sm md:text-base lg:text-lg text-slate-100/90 mb-6">

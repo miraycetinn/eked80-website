@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Hero from '../components/Hero'
+import HomeNewsCarousel from '../components/HomeNewsCarousel'
 import Section from '../components/Section'
 import ProjectCard from '../components/ProjectCard'
 import MemberCard from '../components/MemberCard'
@@ -11,10 +12,22 @@ function HomePage() {
 
   return (
     <div>
-      <Hero />
+      {/* HERO */}
+      <section className="bg-white">
+        <Hero />
+      </section>
 
-      {/* Biz Kimiz + Vizyonumuz + Misyonumuz Section */}
-      <section id="biz-kimiz" className="py-12 md:py-16 bg-white">
+      {/* HABER KARTI */}
+      <section className="bg-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 mt-6 md:mt-10">
+          <HomeNewsCarousel />
+        </div>
+      </section>
+
+      {/* BİZ KİMİZ ve diğer bölümler */}
+      <section className="mt-10 md:mt-14">
+        {/* Biz Kimiz + Vizyonumuz + Misyonumuz Section */}
+        <section id="biz-kimiz" className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-slate-900">
             Biz Kimiz?
@@ -55,6 +68,7 @@ function HomePage() {
             </div>
           </div>
         </div>
+      </section>
       </section>
 
       {/* Projelerimiz Section */}
